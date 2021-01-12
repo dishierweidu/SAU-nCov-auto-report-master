@@ -25,6 +25,10 @@ Github提供了一个secret功能，用于存储密钥等敏感信息，请按�
 - 在仓库设置里面, 设置 secrets 如下
   - `SEP_USER_NAME`: 你的 SEP 用户名(邮箱)
   - `SEP_PASSWD`: 你的 SEP 密码
+  - `XINGMING`: 你的 姓名
+  - `XUEYUAN`: 你的 学院
+  - `TELNUM`: 你的 电话号码
+  - `SAUID`: 你的 SAUID
   - server酱通知设置（需要server酱通知时设置）：
     - `API_KEY`: 你的通知[server酱](http://sc.ftqq.com/3.version)的api key，填写之后可以在程序完成打卡之后通知到微信，如果不填写不影响使用
   - 邮件通知设置（需要邮件通知时设置）：
