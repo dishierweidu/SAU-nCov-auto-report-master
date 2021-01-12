@@ -73,8 +73,8 @@ def submit(s: requests.Session):
         'xuehao': user,
         'shoujihao': telnum,
         'danweiyuanxi': xueyuan,
-        'dangqiansuozaishengfen': "河北省",
-        'dangqiansuozaichengshi': "秦皇岛市",
+        'dangqiansuozaishengfen': "河南省",
+        'dangqiansuozaichengshi': "驻马店市",
         'shifouyuhubeiwuhanrenyuanmiqie': "否",
         'shifoujiankangqingkuang': "是", 
         'shifoujiechuguohubeihuoqitayou': "是",
@@ -83,9 +83,9 @@ def submit(s: requests.Session):
         'shentishifouyoubushizhengzhuan': "否",
         'shifouyoufare': "否",
         'qitaxinxi': "",
-        'tiwen': "36.2",
-        'tiwen1': "36.2",
-        'tiwen2': "36.2",
+        'tiwen': "36.5",
+        'tiwen1': "36.5",
+        'tiwen2': "36.5",
         'riqi': datetime.now(tz=pytz.timezone("Asia/Shanghai")).strftime("%Y-%m-%d"),
         'id': sauid}
 
@@ -127,7 +127,7 @@ def send_email(sender, passwd, receiver, subject, msg):
         body = MIMEText(str(msg),'plain','utf-8')
         body['From'] = formataddr(["notifier",sender])
         body['To'] = formataddr(["me",receiver])
-        body['Subject'] = "UCAS疫情填报助手通知-" + subject
+        body['Subject'] = "SAU疫情填报助手通知-" + subject
 
         global smtp_port, smtp_server
         if smtp_server == "" or smtp_port == "":
