@@ -40,7 +40,7 @@ Github提供了一个secret功能，用于存储密钥等敏感信息，请按�
 - 测试actions是否可以正常工作：编辑本项目内任意文件，推荐修改`README.md`，比如添加一个空行，并提交以触发action运行，提交后的一分钟左右可以在action选项卡中看到运行记录
 
 
-参考截图设定以上三个secrets，`API_KEY`可选。
+参考截图设定以上6个secrets，`API_KEY`可选。
 ![](setting.png)
 
 
