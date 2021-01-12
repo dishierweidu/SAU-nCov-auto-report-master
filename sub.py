@@ -39,10 +39,10 @@ if os.environ.get('GITHUB_RUN_ID', None):
     user = os.environ['SEP_USER_NAME']  # sep账号
     passwd = os.environ['SEP_PASSWD']  # sep密码
     api_key = os.environ['API_KEY']  # server酱的api，填了可以微信通知打卡结果，不填没影响
-    xingming = os.environ['XINGMING'] 
-    telnum = os.environ['TELNUM'] 
-    xueyuan = os.environ['XUEYUAN'] 
-    sauid = os.environ['SAUID'] 
+    xingming = os.environ['XINGMING'] # 姓名
+    telnum = os.environ['TELNUM']  # 电话号码
+    xueyuan = os.environ['XUEYUAN'] # 个人所在学院
+    sauid = os.environ['SAUID']  #个人id
     smtp_port = os.environ['SMTP_PORT'] # 邮件服务器端口，默认为qq smtp服务器端口
     smtp_server = os.environ['SMTP_SERVER'] # 邮件服务器，默认为qq smtp服务器
     sender_email = os.environ['SENDER_EMAIL'] # 发送通知打卡通知邮件的邮箱
